@@ -1,3 +1,2 @@
 ##Introduccion a CSS
-### Curso introductorio a CSS
-
+*** Curso introductorio a CSS ***
