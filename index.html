@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -51,11 +51,86 @@
 				<section>
 					<h2>Temas que se veran</h2>
 					<ul>
-						<li>CSS</li>
-						<li>CSSOM</li>
-						<li>EL Estandar</li>
-						<li>Versiones 1, 2, 3, 4?</li>
+						<li class="fragment">CSS</li>
+						<li class="fragment">CSSOM</li>
+						<li class="fragment">EL Estandar</li>
+						<li class="fragment">Versiones 1, 2, 3, 4?</li>
 					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Que es CSS</h3>
+							<p>
+								Sus siglas son Cascading Style Sheets o hojas de estilo en cascada, CSS es una
+								especificación regulada por la <a target="_blank" href="https://www.w3.org/Consortium/">W3C</a>(World Wide Web Consortium) organización encargada
+								de estandarizan las principales tecnologías base en el desarrollo web.
+								CSS aplica un conjunto de reglas definidas en un documento a un lenguaje de tipo marcado.
+							</p>
+					</section>
+
+					<section>
+						<h3>Desenredando CSS</h3>
+						<p>
+							CSS fue creado para ser aplicado a lenguajes de tipo marcado como lo son el HTML y XML esto para simplificar y mejorar algunas cosas como: ser modular y más eficiente a la hora de definir ciertos estilos a un respectivo documento
+						</p>
+					</section>
+					<section>
+						<h3>Propiedades Y Reglas</h3>
+						<p>
+						Las <i>Propiedades </i> son declaraciones de tipo Clave -> Valor en donde la clave es la propiedad a aplicar
+						y el valor es uno de los rangos de posibilidades que te brinda esa propiedad.
+						Las<i> reglas </i> simplemente son agrupaciones de propiedades
+						<code>
+							<pre>
+<p>
+	body /*Agrupacion de propiedades*/
+	{
+		/*tipo de propiedad*/
+		background-color : blue; /*valor de la propiedad*/
+	}
+	/*en el ejemplo de arriba se puede ver que en el conjunto de reglas 
+	  definido para el tag body se encuentra la propiedad que
+	  aplica el color de fondo a azul */
+</p>
+							</pre>
+						</code>
+						</p>
+					</section>
+					<section>
+						<h3>Selectores</h3>
+						<blockquote>
+							Los selectores en css es el como le decimos al navegador que afecte 
+							a que elementos para los cuales queremos aplicar ciertos estilos
+						</blockquote>
+					</section>
+					<section>
+						<h3>Ejemplos de Selectores</h3>
+						<pre>
+							<code>
+	p /* selector( aplica el conjunto de propiedades definidas
+	               dentro de las llaves a los elementos o tags
+                       del tipo p(parrafo) ) */
+	{
+		background-color : black; /*Color de fondo a negro */
+		color : white; /* Establece el color de la letra a blanco*/
+		font-size : 16px; /*Tamaño de la letra a 16 pixeles*/
+	}
+
+    /*selector( aplica el estilo para el primer elemento 
+                definido en una lista no ordenada)*/
+	ul li:first-child
+	{
+		width : 20px; /* establece el ancho a 20 pixeles*/
+	}
+							</code>
+						</pre>
+					</section>
+				</section>
+				<section>
+					<img src="assets/img/bobCSS.jpg" alt="">
+				</section>
+				<section>
+					<img src="assets/img/csstohtml.png" alt="Eres el CSS de mi HTML">
 				</section>
 			</div>
 
@@ -73,7 +148,7 @@
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
