@@ -125,6 +125,79 @@
 							</code>
 						</pre>
 					</section>
+					<section>
+						<h3>Formas en las cueles podemos definir el CSS</h3>
+						<ul>
+							<li class="fragment">Embebido</li>
+							<li class="fragment">En Linea</li>
+							<li class="fragment">Referencia Externa</li>
+						</ul>
+					</section>
+					<section>
+						<img width="350" height="270" src="assets/img/cssinline.jpg" alt="">
+					</section>
+					<section>
+						<h3>Embebido</h3>
+						<p>
+						Es la primera alternativa para aplicar estilos a nuestros elementos HTML, toda etiqueta HMTL
+						Tiene un atributo llamado style y toma como valores: propiedades CSS, si se requieren especificar más de una solo se separa por ";"
+						</p>
+						<pre>
+							<code class="html">
+
+	<p style="color:green">
+		Ejemplo de estilo embebido en párrafo, cambia el color 
+		de letra a verde
+	</p>
+	
+	<h1 style="background-color:white;font-size:20px">
+		Ejemplo de estilo embebido en h1, cambia el color 
+		de fondo a blanco y el tamaño de letra a 20 pixeles
+	</h1>
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h3>En Linea</h3>
+						<p>
+							Para esta forma, existe una etiqueta llamada style, dentro de esta etiqueta definimos todas las propiedades CSS a aplicar al documento HTML. Esta es una mejor manera de definir estilos ya que es una manera modular y fácil de separar el HTML del CSS.
+							<pre>
+								<code>
+<style>
+	body
+	{
+		border : 2px solid green;
+		background-color : white;
+	}
+
+	h1
+	{
+		font-family: arial;
+		font-size : 40px;
+	}
+</style>
+								</code>
+							</pre>
+						</p>
+					</section>
+					<section>
+						<h3>Referencia Externa</h3>
+						<p>
+							Esta es la mejor práctica, y la que siempre se debería hacer cuando diseñamos con CSS, 
+Existe una etiqueta llamada link, lo que hace es referenciar un archivo CSS, este archivo debe tener la extensión .css, el cual deberá contener todas las propiedades CSS que dan estilo al documento.Esta etiqueta tiene que ir en head
+
+<pre>
+	<code>
+<!--
+   En donde el atributo rel apunto al tipo de hoja de estilos.
+   y href a la ruta donde se encuentra nuestro archivo CSS
+-->
+<link rel="stylesheet" href="folderCSS/mis_estilos.css">
+	</code>
+</pre>
+
+						</p>
+					</section>
 				</section>
 				<section>
 					<img src="assets/img/csstohtml.png" alt="Eres el CSS de mi HTML">
